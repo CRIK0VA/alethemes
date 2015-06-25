@@ -1143,3 +1143,36 @@ div.time-picker li.selected { background: #0063CE; color: #fff; }
 #media-items .media-item {
     min-height: 45px!important;
 }
+.cf:before,
+.cf:after {
+ content:"";
+ display:table;
+}
+.cf:after {
+ clear:both;
+}
+.clear {
+ clear:both;
+}
+
+
+/* Import/Export Extension */
+.item-importer {
+ width: 32%;
+ margin-right: 2%;
+ float: left;
+ background: #FFF;
+ padding: 20px;
+ margin-top: 30px;
+ box-sizing: border-box;
+}
+.item-importer:nth-child(3n){
+ margin-right: 0;
+}
+
+.success {
+ color:green;
+}
+.red {
+ color: #f8636b;
+}

@@ -13,11 +13,6 @@ function aletheme_get_options() {
 		'off' => 'Disable All Comments',
 	);
 
-    $analytics = array(
-        'classic'  => 'Classic Analytics',
-        'universal'  => 'Universal Analytics',
-    );
-
     $headerfont = array_merge(ale_get_safe_webfonts(), ale_get_google_webfonts());
 
     $background_defaults = array(
@@ -237,12 +232,6 @@ function aletheme_get_options() {
 	$options[] = array( "name" => "Advanced Settings",
 						"type" => "heading");
 
-    $options[] = array( "name" => "Google Analytics Type",
-                        "desc" => "Select the google analytics code type. Universal or Classic (The difference between versions you will find in google)",
-                        "id" => "ale_analyticstype",
-                        "std" => "classic",
-                        "type" => "select",
-                        "options" => $analytics);
 	
 	$options[] = array( "name" => "Google Analytics",
 						"desc" => "Please insert your Google Analytics code here. Example: <strong>UA-22231623-1</strong>",
@@ -267,7 +256,6 @@ function aletheme_get_options() {
                         "id" => "ale_footermenutitle",
                         "std" => "Select a category",
                         "type" => "text");
-
 	
 	return $options;
 }

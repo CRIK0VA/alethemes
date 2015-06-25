@@ -129,7 +129,7 @@ add_action('admin_init', 'ale_admin_table_columns', 100);
  * Change footer
  */
 function ale_admin_remove_footer_admin() {
-	echo '<span id="footer-thankyou">Developed by <a href="'.'http://www.alethemes.com'.'" target="_blank">Alethems</a></span>';
+	echo '<span id="footer-thankyou">Developed by <a href="'.'http://www.alethemes.com'.'" target="_blank">Alethemes</a></span>';
 }
 add_filter('admin_footer_text', 'ale_admin_remove_footer_admin');
 
