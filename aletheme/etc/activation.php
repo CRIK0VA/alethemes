@@ -108,7 +108,7 @@ if (!(defined('MULTISITE') && MULTISITE)) {
 									<option selected="selected" value="yes"><?php echo _e('Yes', 'aletheme'); ?></option>
 									<option value="no"><?php echo _e('No', 'aletheme'); ?></option>
 								</select>
-								<span class="description"><?php printf(__('Create a page called Home and set it to be the static front page', 'aletheme')); ?></span>
+								<span class="description"><?php printf(__('Select <strong>Yes</strong> to create a page called <strong>Home</strong> and it will be set as the static front page. <br /><strong class="red">Note:</strong> If you are going to import the demo content then select <strong class="red">No</strong> because this page will be imported by the Import Process. If you already have a page called Home then remove it totally from your site. The existing Home Page will damage the import process. <span class="red">Please, remove/don\'t create it.</span>', 'aletheme')); ?></span>
 							</fieldset>
 						</td>
 					</tr>
@@ -120,7 +120,7 @@ if (!(defined('MULTISITE') && MULTISITE)) {
 									<option selected="selected" value="yes"><?php echo _e('Yes', 'aletheme'); ?></option>
 									<option value="no"><?php echo _e('No', 'aletheme'); ?></option>
 								</select>
-								<span class="description"><?php printf(__('Create a page called Blog and set it to be the posts page', 'aletheme')); ?></span>
+								<span class="description"><?php printf(__('Select <strong>Yes</strong> to create a page called <strong>Blog</strong> and set it to be the posts page. <br /><strong class="red">Note:</strong> If you are going to import the demo content then select <strong class="red">No</strong> because this page will be imported by the Import Process. If you already have a page called Blog then remove it totally from your site. The existing Home Page will damage the import process. <span class="red">Please, remove/don\'t create it.</span>', 'aletheme')); ?></span>
 							</fieldset>
 						</td>
 					</tr>
