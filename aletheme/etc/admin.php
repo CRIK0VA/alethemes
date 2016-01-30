@@ -67,8 +67,8 @@ function ale_admin_custom_to_navigation_checkbox($posts, $args, $post_type) {
 	global $_nav_menu_placeholder, $wp_rewrite;
 	$_nav_menu_placeholder = ( 0 > $_nav_menu_placeholder ) ? intval($_nav_menu_placeholder) - 1 : -1;
 
-	$archive_slug = $post_type['args']->has_archive === true ? $post_type['args']->rewrite['slug'] : $post_type['args']->has_archive;
-	if ( $post_type['args']->rewrite['with_front'] )
+	$archive_slug = $post_type->has_archive === true ? $post_type->rewrite['slug'] : $post_type->has_archive;
+	if ( $post_type->rewrite['with_front'] )
 		$archive_slug = substr( $wp_rewrite->front, 1 ) . $archive_slug;
 	else
 		$archive_slug = $wp_rewrite->root . $archive_slug;
@@ -78,7 +78,7 @@ function ale_admin_custom_to_navigation_checkbox($posts, $args, $post_type) {
 		'object_id' => $_nav_menu_placeholder,
 		'post_content' => '',
 		'post_excerpt' => '',
-		'post_title' => $post_type['args']->labels->all_items,
+		'post_title' => $post_type->labels->all_items,
 		'post_type' => 'nav_menu_item',
 		'type' => 'custom',
 		'url' => site_url( $archive_slug ),
