@@ -387,6 +387,7 @@ function optionsframework_fields() {
 		 *********************************
 		 *********************************/
 
+
 		// Heading Typography
 		case 'typo':
 			

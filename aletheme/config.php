@@ -37,14 +37,20 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "upload");
 
+    $options[] = array( "name" => "Site Footer Logo",
+                        "desc" => "Upload or put the site logo link (Default logo size: 133-52px)",
+                        "id" => "ale_sitelogofooter",
+                        "std" => "",
+                        "type" => "upload");
+
     $options[] = array( 'name' => "Manage Background",
                         'desc' => "Select the background color, or upload a custom background image. Default background is the #f5f5f5 color",
                         'id' => 'ale_background',
                         'std' => $background_defaults,
                         'type' => 'background');
 
-    $options[] = array( "name" => "Background Size Cover",
-                        "desc" => "Check if you want to select cover background size",
+    $options[] = array( "name" => "Show Site Preloader",
+                        "desc" => "Description kakoito.",
                         "id" => "ale_backcover",
                         "std" => "1",
                         "type" => "checkbox");
@@ -256,6 +262,17 @@ function aletheme_get_options() {
                         "id" => "ale_footermenutitle",
                         "std" => "Select a category",
                         "type" => "text");
+
+    $options[] = array( "name" => "Footer menu title",
+                        "desc" => "Insert the footer menu title",
+                        "id" => "ale_footermenutitle_1",
+                        "std" => "",
+                        "type" => "images",
+                        "options" => array(
+                            'image_1' => $imagepath.'/1col.png',
+                            'image_2' => $imagepath.'/2cl.png',
+                            'image_3' => $imagepath.'/2cr.png', ),
+        );
 	
 	return $options;
 }
