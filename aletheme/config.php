@@ -310,13 +310,14 @@ function aletheme_metaboxes($meta_boxes) {
 
 
     $meta_boxes[] = array(
-        'id'         => 'contact_page_metabox',
-        'title'      => 'Contact Page Options',
+        'id'         => 'home_page_metabox',
+        'title'      => 'Home Meta Options',
         'pages'      => array( 'page', ), // Post type
         'context'    => 'normal',
         'priority'   => 'high',
         'show_names' => true, // Show field names on the left
-        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-contact.php'), ), // Specific post templates to display this metabox
+        'show_on'    => array( 'key' => 'page-template', 'value' => array('page-home.php'), ), // Specific post templates to display this metabox
+
         'fields' => array(
             array(
                 'name' => 'First Description',
@@ -328,7 +329,19 @@ function aletheme_metaboxes($meta_boxes) {
                 'name' => 'Second Description',
                 'desc' => 'Insert the text',
                 'id'   => $prefix . 'descr2',
-                'type' => 'textarea',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'File Upload',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'fileupload',
+                'type' => 'file',
+            ),
+            array(
+                'name' => 'Text Date',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'datefield',
+                'type' => 'wysiwyg',
             ),
         )
     );
@@ -813,7 +826,14 @@ function aletheme_get_images_sizes() {
                 'height'    => 295,
                 'crop'      => true,
             ),
+            array(
+                'name'      => 'post-minibox',
+                'width'     => 500,
+                'height'    => 200,
+                'crop'      => true,
+            ),
         ),
+
 
     );
 }

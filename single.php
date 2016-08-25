@@ -21,6 +21,17 @@
         <!-- Left Content -->
         <div class="left-side">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+
+                <?php
+
+                    echo get_the_post_thumbnail($post->ID,'post-minibox');
+                ?>
+
+
+
+
+
                 <p class="info"><?php _e('in','aletheme'); ?> <?php the_category(', '); ?> <?php _e('by','aletheme'); ?> <?php echo the_author_posts_link(); ?>  <span>|</span> <?php comments_number( 'no comments', 'one comment', '% comments' ); ?></p>
                 <h3 class="caption"><?php the_title(); ?></h3>
                 <div class="text">
