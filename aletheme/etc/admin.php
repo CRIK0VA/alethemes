@@ -133,30 +133,6 @@ function ale_admin_remove_footer_admin() {
 }
 add_filter('admin_footer_text', 'ale_admin_remove_footer_admin');
 
-/**
- * Add custom icons for post types 
- */
-function ale_post_type_icons() {
-	?>
-		<style type="text/css">
-		<?php
-		if (function_exists('aletheme_get_post_types')) {
-			foreach (aletheme_get_post_types() as $type => $config) {
-				?>
-					#menu-posts-<?php echo $type ?> .wp-menu-image {
-						background: url(<?php echo ALETHEME_URL ?>/assets/images/post_type_icons/<?php echo $type ?>.png) no-repeat 6px -17px !important;
-					}
-					#menu-posts-<?php echo $type ?>:hover .wp-menu-image {
-						background-position: 6px 7px !important;
-					}
-				<?php
-			}
-		}
-		?>
-		</style>
-	<?php
-}
-add_action( 'admin_head', 'ale_post_type_icons');
 
 /**
  * Add featured image header column to admin data-table

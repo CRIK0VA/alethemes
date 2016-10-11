@@ -97,18 +97,20 @@ function ale_contact_email_send($data) {
 	try {
 		$blog = get_bloginfo('name');
 
-		$subject = 'New contact message from ' . $blog;
+		$subject = 'Контактная форма на сайте ' . $blog;
+
+		// $name = __('Имя','aletheme');
 		$body = "
-			Name: {$data['name']}
+			Имя: {$data['name']}
 
-			Email: {$data['email']}
+			Почта: {$data['email']}
 
-			Phone: {$data['phone']}
+			Телефон: {$data['phone']}
 
-			How did you find me: {$data['how']}
+			Пол клиента: {$data['genre']}
 
 
-			Message:
+			Сообщение:
 
 			{$data['message']}
 
@@ -117,7 +119,7 @@ function ale_contact_email_send($data) {
 			------------
 
 
-			Sent from {$blog}
+			Отправленно с {$blog}
 		";
 
 		$ale_mail_from->setName($data['name'])->setEmail($data['email'])->addFilters();

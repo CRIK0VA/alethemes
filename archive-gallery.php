@@ -33,7 +33,7 @@
 
             <div class="scrollable" id="scrollable">
                 <div class="items">
-                    <?php global $query_string; query_posts($query_string.'&posts_per_page=-1');?>
+                    <?php global $query_string; query_posts($query_string.'&posts_per_page=3');?>
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <!-- Item -->
                     <div class="item">
@@ -58,14 +58,7 @@
                 </div>
             </div>
 
-            <!-- Nav -->
-            <a class="prev browse left"></a>
-            <a class="next browse right"></a>
-
-            <!-- Scroll -->
-            <div class="pseudo-scroll">
-                <div class="scrollbar"></div>
-            </div>
+          <?php ale_page_links(); ?>
 
         </div>
     </div>

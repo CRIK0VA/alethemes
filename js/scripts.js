@@ -3,7 +3,17 @@ jQuery(function($) {
 
     // Custom jQuery Code Here
 
+    $('.portfolioslider').flexslider({
+        animation:'slide',
+        smoothHeight:true,
+        controlNav: false
+    });
 
+    $('.newhomeslider').flexslider({
+        animation:'slide',
+        smoothHeight:true,
+        controlNav: false
+    });
 
 });
 

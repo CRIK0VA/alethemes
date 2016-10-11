@@ -863,6 +863,22 @@ function aletheme_get_post_types() {
                 'first_image',
             )
         ),
+        'services' => array(
+            'config' => array(
+                'public' => true,
+                'menu_position' => 20,
+                'menu_icon' => 'dashicons-format-audio',
+                'has_archive'   => true,
+                'supports'=> array(
+                    'title',
+                    'editor',
+                    'thumbnail',
+                ),
+                'show_in_nav_menus'=> true,
+            ),
+            'singular' => 'Сервис',
+            'multiple' => 'Сервисы'
+        ),
     );
 }
 
@@ -883,6 +899,28 @@ function aletheme_get_taxonomies() {
             ),
             'singular'    => 'Gallery Category',
             'multiple'    => 'Gallery Categories',
+        ),
+
+
+        'services-category'    => array(
+            'for'        => array('services'),
+            'config'    => array(
+                'sort'        => true,
+                'args'        => array('orderby' => 'term_order'),
+                'hierarchical' => true,
+            ),
+            'singular'    => 'Категория',
+            'multiple'    => 'Категории',
+        ),
+        'price'    => array(
+            'for'        => array('services'),
+            'config'    => array(
+                'sort'        => true,
+                'args'        => array('orderby' => 'term_order'),
+                'hierarchical' => true,
+            ),
+            'singular'    => 'Цена сервиса',
+            'multiple'    => 'Цены сервисов',
         ),
     );
 }

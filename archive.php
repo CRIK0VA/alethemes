@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+    <h1>It's Archive Page</h1>
     <!-- Content -->
     <div class="blog-center-align">
 

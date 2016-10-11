@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+
+<h1>It's Index Page</h1>
+<br><br>
     <!-- Content -->
     <div class="blog-center-align">
 
