@@ -25,6 +25,7 @@ add_action('init', 'ale_init_sidebars');
  */
 function ale_init_widgets() {
 	register_widget('Aletheme_Blog_Widget');
+	register_widget('Aletheme_Gallery_Widget');
 	register_widget('Aletheme_Flickr_Widget');
 	register_widget('Aletheme_About_Widget');
     register_widget('Aletheme_Mostcommented_Widget');
