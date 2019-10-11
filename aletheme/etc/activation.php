@@ -77,7 +77,7 @@ if (!(defined('MULTISITE') && MULTISITE)) {
 		?>
 
 		<div class="wrap">
-			<?php screen_icon('aletheme'); ?>
+			
 			<h2><?php printf(__('%s Theme Activation', 'aletheme'), wp_get_theme()); ?></h2>
 			<?php settings_errors(); ?>
 

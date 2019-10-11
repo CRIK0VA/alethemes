@@ -23,7 +23,7 @@ class Aletheme_Gallery_Widget extends WP_Widget
         );
 
         /* Create the widget. */
-        $this->WP_Widget( 'ale_gallery_widget', __('Aletheme Галерея', 'aletheme'), $widget_ops, $control_ops );
+        parent::__construct( 'ale_gallery_widget', __('Aletheme Галерея', 'aletheme'), $widget_ops, $control_ops );
     }
 
     /**

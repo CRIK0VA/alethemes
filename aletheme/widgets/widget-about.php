@@ -25,7 +25,7 @@ class Aletheme_About_Widget extends WP_Widget
 		);
 
 		/* Create the widget. */
-		$this->WP_Widget( 'ale_about_widget', __('Aletheme About Me', 'aletheme'), $widget_ops, $control_ops );
+		parent::__construct( 'ale_about_widget', __('Aletheme About Me', 'aletheme'), $widget_ops, $control_ops );
 	}
 
 	/**

@@ -120,7 +120,7 @@ require_once ALETHEME_PATH . '/options/admin/options-framework.php';
  * Require Needed Files & Libraries
  ****************************************************************/
 
-foreach(array('etc', 'functions', 'widgets', 'metaboxes', 'help', 'sliders', 'shortcodes') as $folder) {
+foreach(array('etc', 'functions', 'widgets', 'metaboxes', 'sliders', 'shortcodes') as $folder) {
     $dir = (array)glob(ALETHEME_PATH . '/' .  $folder . '/*.php');
 
     foreach ($dir as $filename) {

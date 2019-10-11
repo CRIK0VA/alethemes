@@ -183,7 +183,7 @@ function ale_change_toolbar() {
 	
     $wp_admin_bar->add_menu(array(
         'id' => 'aletheme',
-        'title' => '<span class="ab-icon"></span>',
+        'title' => esc_html__('Theme Options', 'alethemes'),
         'href' => admin_url('themes.php?page=aletheme'),
 	));
 	

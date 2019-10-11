@@ -177,7 +177,6 @@ if ( !function_exists( 'optionsframework_page' ) ) {
 ?>
 
 	<div id="optionsframework-wrap" class="wrap">
-    <?php screen_icon( 'themes' ); ?>
     <h2 class="nav-tab-wrapper">
         <?php echo optionsframework_tabs(); ?>
     </h2>

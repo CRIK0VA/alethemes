@@ -23,7 +23,7 @@ class Aletheme_Blog_Widget extends WP_Widget
 		);
 
 		/* Create the widget. */
-		$this->WP_Widget( 'ale_blog_widget', __('Aletheme Recent Posts', 'aletheme'), $widget_ops, $control_ops );
+		parent::__construct( 'ale_blog_widget', __('Aletheme Recent Posts', 'aletheme'), $widget_ops, $control_ops );
 	}
 
 	/**

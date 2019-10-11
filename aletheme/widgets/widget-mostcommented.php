@@ -23,7 +23,7 @@ class Aletheme_Mostcommented_Widget extends WP_Widget
         );
 
         /* Create the widget. */
-        $this->WP_Widget( 'ale_mostcommented_widget', 'Aletheme Most Commented Posts', $widget_ops, $control_ops );
+        parent::__construct( 'ale_mostcommented_widget', 'Aletheme Most Commented Posts', $widget_ops, $control_ops );
     }
 
     /**
