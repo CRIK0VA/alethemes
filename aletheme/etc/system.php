@@ -192,26 +192,6 @@ function ale_change_toolbar() {
 add_action('admin_bar_menu', 'ale_change_toolbar', 40);
 
 
-// move admin bar to bottom
-function fb_change_toolbar_css() { 
-	
-	global $wp_admin_bar;
-	
-	if (!$wp_admin_bar) {
-		return;
-	}
-	
-	?>
-	<style type="text/css">
-		#wp-admin-bar-aletheme .ab-icon {
-			background-image: url("<?php echo ALETHEME_URL?>/assets/images/aletheme_icon_16_light.png");
-		}
-	</style> <?php 
-}
-// on backend area
-add_action( 'admin_head', 'fb_change_toolbar_css' );
-// on frontend area
-add_action( 'wp_head', 'fb_change_toolbar_css' );
 
 
 
